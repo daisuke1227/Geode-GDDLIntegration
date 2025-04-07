@@ -1,10 +1,11 @@
 {
-	"geode": "4.2.0",
+	"geode": "4.3.1",
 	"version": "v1.2.1",
 	"gd": {
 		"android": "2.2074",
 		"win": "2.2074",
-		"mac": "2.2074"
+		"mac": "2.2074",
+		"ios": "2.2074"
 	},
 	"id": "b1rtek.gddlintegration",
 	"name": "GDDL Integration",
@@ -15,20 +16,13 @@
 		"source": "https://github.com/B1rtek/Geode-GDDLIntegration",
 		"community": "https://discord.gg/gddl"
 	},
-	"dependencies": [
-		{
-			"id": "geode.node-ids",
-			"version": ">=1.13.2",
-			"importance": "required"
-		}
-	],
 	"tags": [
 		"utility",
 		"interface",
 		"online"
 	],
 	"issues": {
-		"info": "You can submit an <cr>bug report</c>/<cj>feature request</c> directly to the mod's repo here",
+		"info": "You can submit a <cr>bug report</cr>/<cj>feature request</cj> directly to the mod's repo here",
 		"url": "https://github.com/B1rtek/Geode-GDDLIntegration/issues/new/choose"
 	},
 	"resources": {
@@ -42,7 +36,7 @@
 	"settings": {
 		"login": {
 			"name": "GDDL Account",
-			"description": "<cb>Log in</c> to your <cr>GDDL Account</c> to be able to submit ratings <cg>directly from the game</c>.",
+			"description": "<cb>Log in</cb> to your <cr>GDDL Account</cr> to be able to submit ratings <cg>directly from the game</cg>.",
 			"type": "custom:login-v3"
 		},
 		"title-level-info-settings": {
@@ -51,12 +45,12 @@
 		},
 		"button-position": {
 			"name": "Button position",
-			"description": "Defines the <cr>GDDL Button</c> position on the <cb>level info</c> page. <cy>By default</c> it's positioned <cp>to the left</c> of the <cr>demon difficulty face</c>. This setting <cy>is overriden</c> by the setting \"<cb>Use old tier label</c>\"",
+			"description": "Defines the <cr>GDDL Button</cr> position on the <cb>level info</cb> page. <cy>By default</cy> it's positioned <cp>to the left</cp> of the <cr>demon difficulty face</cr>. This setting <cy>is overridden</cy> by the setting \"<cb>Use old tier label</cb>\"",
 			"type": "custom:button-position-v3"
 		},
-		"use-old-tier-label" : {
+		"use-old-tier-label": {
 			"name": "Use old tier label",
-			"description": "<cy>Changes</c> the <cr>tier button</c> on the <cb>level info page</c> into a <cg>clickable label</c>, just like it used to be in the <co>early versions of this mod</c>. Allows you to <cy>specify an offset</c> to move the label <cg>up</c> <cb>or</c> <cr>down</c> by the given number of rows. <cr>This settings overrides \"Button position\"!</c>",
+			"description": "<cy>Changes</cy> the <cr>tier button</cr> on the <cb>level info page</cb> into a <cg>clickable label</cg>, just like it used to be in the <co>early versions of this mod</co>. Allows you to <cy>specify an offset</cy> to move the label <cg>up</cg> <cb>or</cb> <cr>down</cr> by the given number of rows. <cr>This setting overrides \"Button position\"!</cr>",
 			"type": "custom:use-old-tier-label-v3"
 		},
 		"title-level-info-popup-settings": {
@@ -65,13 +59,13 @@
 		},
 		"use-old-info-popup": {
 			"name": "Use old level info popup",
-			"description": "When activated, will show the <cb>simple popup</c> with average <cr>tier</c> and <cg>enjoyment</c> ratings instead of the one introduced in 1.2 with <cy>bar charts and skillsets</c>",
+			"description": "When activated, will show the <cb>simple popup</cb> with average <cr>tier</cr> and <cg>enjoyment</cg> ratings instead of the one introduced in 1.2 with <cy>bar charts and skillsets</cy>",
 			"type": "bool",
 			"default": false
 		},
 		"thin-chart-bars": {
 			"name": "Spacing in spread charts",
-			"description": "Makes the bars in <cr>rating</c> and <cg>enjoyment</c> spread charts thinner, when deactivated will leave <cb>no spacing between</c> bars in the charts",
+			"description": "Makes the bars in <cr>rating</cr> and <cg>enjoyment</cg> spread charts thinner; when deactivated will leave <cb>no spacing between</cb> bars in the charts",
 			"type": "bool",
 			"default": true
 		},
@@ -79,21 +73,21 @@
 			"name": "Misc",
 			"type": "title"
 		},
-		"exclude-range" : {
+		"exclude-range": {
 			"name": "Include/Exclude range",
-			"description": "<cr>Removes</c> the GDDL button from level pages of levels <cy>within</c> the specified range. If the <cb>include</c> toggle is toggled <cg>on</c>, the ratings will <cy>only</c> be displayed in the specified range. If both range ends are set to <cb>0</c>, this setting does <cy>nothing</c>, an empty value means 1 (range beginning) and 35 (range end) by default. Range is <cg>inclusive</c> on <cb>both</c> ends.",
+			"description": "<cr>Removes</cr> the GDDL button from level pages of levels <cy>within</cy> the specified range. If the <cb>include</cb> toggle is toggled <cg>on</cg>, the ratings will <cy>only</cy> be displayed in the specified range. If both range ends are set to <cb>0</cb>, this setting does <cy>nothing</cy>; an empty value means 1 (range beginning) and 35 (range end) by default. Range is <cg>inclusive</cg> on <cb>both</cb> ends.",
 			"type": "custom:exclude-range-v3"
 		},
 		"popup-color": {
 			"name": "GDDL Popups color",
-			"description": "<cy>Changes</c> the <cb>background color</c> of the gray backgrounds in <cr>this mod's</c> popups",
+			"description": "<cy>Changes</cy> the <cb>background color</cb> of the gray backgrounds in <cr>this mod's</cr> popups",
 			"type": "string",
 			"default": "Gray",
 			"one-of": ["Brown", "Blue", "Green", "Purple", "Gray"]
 		},
 		"cache-reset-v3": {
 			"name": "Reset GDDL cache",
-			"description": "Use if the <cr>GDDL Split layer</c> shows <cy>zero</c> for every tier or if the ratings on the level info page are <co>inaccurate</c>.",
+			"description": "Use if the <cr>GDDL Split layer</cr> shows <cy>zero</cy> for every tier or if the ratings on the level info page are <co>inaccurate</co>.",
 			"type": "custom:cache-reset-v3"
 		}
 	}
